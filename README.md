@@ -10,11 +10,26 @@ This repository contains a clean implementation of a VAE trained on MNIST handwr
 - Learn how to sample, interpolate, and visualize what a model “believes” a digit looks like
 - Reflect on how these concepts translate to biological applications like single-cell analysis
 
-## 🔍 What’s Inside
-- A VAE built with PyTorch from scratch
-- Sampling from the latent space to generate new digits
-- UMAP visualization of the learned latent representations
-- Reflections on how these ideas extend to bioinformatics
+---
+
+## 🌟 Key Analyses & Results
+
+### 1. Generated Digits  
+Sampled from the standard normal distribution in latent space:
+
+![Generated Digits](generated_digits.png)
+
+### 2. True-Digit Reconstructions  
+Decoded from the `μ` vectors of real MNIST images:
+
+![Reconstructed Digits](real_vs_recon.png)
+
+### 3. Latent Space Visualization (UMAP)  
+UMAP was used to reduce the 20-dimensional latent space to 2D. Each point represents a digit's encoded mean (`μ`), revealing natural clustering by digit class:
+
+![UMAP of Latent Space](latent_space_UMAP.png)
+
+---
 
 
 ## 🧪 Reflections: From MNIST to Cells
